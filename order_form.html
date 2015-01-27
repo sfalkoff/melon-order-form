@@ -5,7 +5,7 @@
     <title> Ubermelon Order Form </title>
 </head> 
 
-<body>
+<body style="background-color:#EBFFEB">
     <h1>Order!</h1>
     <table>
         <thead>
@@ -52,12 +52,28 @@
             <option value="canteloupe"> Canteloupe </option>
             <option value="crenshaw"> Crenshaw </option>
             <option value="canary"> Canary </option>
-            </select>
+              </select>
         </label>
         <br>
         <label for="quantity"> Quantity* </label><input type="text" name="quantity" id="quantity">
         <br>
-        <label> Delivery Time <input type="radio" name="time" value ="am"> AM </label>
+        <label> Delivery Time <input type="radio" name="time" value="am"> AM
+            <input type="radio" name="time" value="pm"> PM </label>
+        <br>
+        <label> Returning Customer? <input type="radio" name="returning" value="yes"> Yes
+            <input type="radio" name="returning" value="no"> No </label>  
+        <br>
+        <label>
+            For Statistical Purposes:
+            <input type="checkbox" name="animals" value="dog"> Dog
+            <input type="checkbox" name="animals" value="cat"> Cat
+            <input type="checkbox" name="animals" value="hedgehog"> Hedgehog
+            <input type="checkbox" name="animals" value="balloonicorn"> Balloonicorn
+            <input type="checkbox" name="animals" value="yak"> Yak
+        </label>
+        <br>
+        <input type="submit" value="Send us yo' order!">
+
     </form>
     <p><label for="quantity">*Quantities given are by the flat.</label></p>
 </body>   
