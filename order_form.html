@@ -41,7 +41,7 @@
         </tbody>
     </table>
     <p>Place your orders here! You know you want to.</p>
-    <form>
+    <form action="https://ubermelon-order-form.herokuapp.com/process" method="GET">
         <label> First Name <input type="text" name="first_name" id="fname"></label>
         <br>
         <label for="lname"> Last Name </label><input type="text" name="last_name" id="lname">
@@ -57,8 +57,10 @@
         <br>
         <label for="quantity"> Quantity* </label><input type="text" name="quantity" id="quantity">
         <br>
-        <label> Delivery Time <input type="radio" name="time" value="am"> AM
-            <input type="radio" name="time" value="pm"> PM </label>
+        <label> Delivery Time <input type="radio" name="time" value="am"> 12:00am-12:00pm
+            <input type="radio" name="time" value="pm"> 12:00pm-12:00am
+            <input type="radio" name="time" value="wat"> Time is an illusion 
+        </label>
         <br>
         <label> Returning Customer? <input type="radio" name="returning" value="yes"> Yes
             <input type="radio" name="returning" value="no"> No </label>  
@@ -73,8 +75,9 @@
         </label>
         <br>
         <input type="submit" value="Send us yo' order!">
-
     </form>
-    <p><label for="quantity">*Quantities given are by the flat.</label></p>
-</body>   
+</body>
+<footer>
+    <label for="quantity">*Quantities given are by the flat.</label>
+</footer>
 </html>
