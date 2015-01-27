@@ -44,7 +44,7 @@
     <form>
         <label> First Name <input type="text" name="first_name" id="fname"></label>
         <br>
-        <label for="lname"> Last Name <input type="text" name="last_name" id="lname">
+        <label for="lname"> Last Name </label><input type="text" name="last_name" id="lname">
         <br>
         <label> Melon Type <select name="melon_type">
             <option value="watermelon"> Watermelon </option>
@@ -52,8 +52,13 @@
             <option value="canteloupe"> Canteloupe </option>
             <option value="crenshaw"> Crenshaw </option>
             <option value="canary"> Canary </option>
+            </select>
         </label>
-        <br>  
+        <br>
+        <label for="quantity"> Quantity* </label><input type="text" name="quantity" id="quantity">
+        <br>
+        <label> Delivery Time <input type="radio" name="time" value ="am"> AM </label>
     </form>
+    <p><label for="quantity">*Quantities given are by the flat.</label></p>
 </body>   
 </html>
