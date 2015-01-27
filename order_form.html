@@ -44,40 +44,39 @@
     <form action="https://ubermelon-order-form.herokuapp.com/process" method="GET">
         <label> First Name <input type="text" name="first_name" id="fname"></label>
         <br>
-        <label for="lname"> Last Name </label><input type="text" name="last_name" id="lname">
+        <label for="lname"> Last Name </label>
+            <input type="text" name="last_name" id="lname">
         <br>
-        <label> Melon Type <select name="melon_type">
-            <option value="watermelon"> Watermelon </option>
-            <option value="honeydew"> Honeydew </option>
-            <option value="canteloupe"> Canteloupe </option>
-            <option value="crenshaw"> Crenshaw </option>
-            <option value="canary"> Canary </option>
-              </select>
-        </label>
+        Melon Type <select name="melon_type">
+            <label><option value="watermelon"> Watermelon </option></label>
+            <label><option value="honeydew"> Honeydew </option></label>
+            <label><option value="canteloupe"> Canteloupe </option></label>
+            <label><option value="crenshaw"> Crenshaw </option></label>
+            <label><option value="canary"> Canary </option></label>
+        </select>
         <br>
-        <label for="quantity"> Quantity* </label><input type="text" name="quantity" id="quantity">
+        <label for="quantity"> Quantity* </label>
+            <input type="text" name="quantity" id="quantity">
         <br>
-        <label> Delivery Time <input type="radio" name="time" value="am"> 12:00am-12:00pm
-            <input type="radio" name="time" value="pm"> 12:00pm-12:00am
-            <input type="radio" name="time" value="wat"> Time is an illusion 
-        </label>
+        Delivery Time 
+            <label><input type="radio" name="time" value="am"> 12:00am-12:00pm </label>
+            <label><input type="radio" name="time" value="pm"> 12:00pm-12:00am </label>
+            <label><input type="radio" name="time" value="wat"> Time is an illusion </label>
         <br>
-        <label> Returning Customer? <input type="radio" name="returning" value="yes"> Yes
-            <input type="radio" name="returning" value="no"> No </label>  
+        Returning Customer? <label> <input type="radio" name="returning" value="yes"> Yes </label>
+            <label><input type="radio" name="returning" value="no"> No </label>  
         <br>
-        <label>
-            For Statistical Purposes:
-            <input type="checkbox" name="animals" value="dog"> Dog
-            <input type="checkbox" name="animals" value="cat"> Cat
-            <input type="checkbox" name="animals" value="hedgehog"> Hedgehog
-            <input type="checkbox" name="animals" value="balloonicorn"> Balloonicorn
-            <input type="checkbox" name="animals" value="yak"> Yak
-        </label>
+        For Statistical Purposes:
+            <label><input type="checkbox" name="animals" value="dog"> Dog </label>
+            <label><input type="checkbox" name="animals" value="cat"> Cat </label>
+            <label><input type="checkbox" name="animals" value="hedgehog"> Hedgehog </label>
+            <label><input type="checkbox" name="animals" value="balloonicorn"> Balloonicorn </label>
+            <label><input type="checkbox" name="animals" value="yak"> Yak </label>
         <br>
         <input type="submit" value="Send us yo' order!">
     </form>
 </body>
 <footer>
-    <label for="quantity">*Quantities given are by the flat.</label>
+    <p>*Quantities given are by the flat.</p>
 </footer>
 </html>
